@@ -1,0 +1,8 @@
+<header class="header">
+  <mat-icon class="logo" svgIcon="logo"></mat-icon>
+  <div role="navigation" class="navigation">
+    <ul class="navigation_list">
+      <li class="list {{list.alt}}" *ngFor="let list of menuNavigation" [innerHTML]="list.name"></li>
+    </ul>
+  </div>
+</header>

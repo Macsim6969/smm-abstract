@@ -1,0 +1,26 @@
+{
+  "header": {
+    "headerMenu": [
+      {
+        "name": "About us"
+      },
+      {
+        "name": "Features"
+      },
+      {
+        "name": "Blog"
+      },
+      {
+        "name": "Contact"
+      },
+      {
+        "name": "Download App",
+        "alt": "download"
+      }
+    ],
+    "headerBanner": {
+      "title": "Introducing <strong>Abstract</strong> App landing page.",
+      "content": "A perfect landing page to showcase your new App."
+    }
+  }
+}
