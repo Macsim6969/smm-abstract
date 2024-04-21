@@ -1,0 +1,104 @@
+.descriptions {
+  background-image: url('../../../assets/images/descriptions/desc_bg.png');
+  background-size: 150% 150%;
+  height: 500px;
+  position: relative;
+  background-position: -196px -51px;
+
+  img {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    top: 0;
+  }
+
+  .descriptions_container {
+    max-width: 1120px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: flex-start;
+
+    .card {
+      max-width: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      box-shadow: 5px 1px 40px 5px #0000001F;
+
+      border-radius: 22px;
+      padding: 32px 20px 51px 20px;
+
+      &.active {
+        padding: 32px 20px 26px 20px;
+
+        .card_content {
+          padding: 0 0 46px 0;
+        }
+
+        .card_actions {
+          transition: all 0.5s ease;
+          display: flex;
+        }
+      }
+
+      .card_header {
+        padding: 0 0 18.86px 0;
+
+        mat-icon {
+          width: 100%;
+        }
+      }
+
+      .card_content {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        padding: 0 0 0 0;
+
+        h3 {
+          font-weight: 500;
+          color: #000079;
+          font-size: 2.4rem;
+          line-height: 2.8rem;
+          letter-spacing: -4%;
+        }
+
+        p {
+          color: #9B96BC;
+          font-size: 1.8rem;
+          line-height: 2.6rem;
+          font-weight: 400;
+          letter-spacing: -4%;
+        }
+      }
+
+      .card_actions {
+        display: none;
+        padding: 0;
+        flex-direction: row;
+        gap: 22px;
+        min-height: 100%;
+        cursor: pointer;
+
+        mat-icon{
+          width: 20px;
+        }
+        a {
+          color: #000079;
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 2.6rem;
+          letter-spacing: -0.04em;
+          text-decoration: unset;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

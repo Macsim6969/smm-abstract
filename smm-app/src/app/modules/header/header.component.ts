@@ -18,7 +18,11 @@ export class HeaderComponent implements OnInit, OnDestroy {
     private translate: TranslateService) { }
 
   ngOnInit(): void {
-    this.translate.stream('header.headerMenu').subscribe((data: MenuNavigation[]) => {
+    this.initializeHeaderMenuDataFromJson();
+  }
+
+  private initializeHeaderMenuDataFromJson() {
+    this.translateSubscription = this.translate.stream('header.headerMenu').subscribe((data: MenuNavigation[]) => {
       this.menuNavigation = data;
     })
   }

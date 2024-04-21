@@ -9,6 +9,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ShareModule } from './shared/share.module';
 import { StoreService } from './services/store.service';
+import { GlobalIconService } from './services/globalIcon.service';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/');
 }
@@ -36,7 +37,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   bootstrap: [AppComponent],
   providers: [
     provideAnimationsAsync(),
-    StoreService
+    StoreService,
+    GlobalIconService
   ]
 })
 

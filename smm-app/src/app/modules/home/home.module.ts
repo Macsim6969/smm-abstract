@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
-import { Router } from 'express';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { HeaderComponent } from '../header/header.component';
-import { HeaderModule } from '../header/header.module';
 import { ShareModule } from '../../shared/share.module';
+import { BannerModule } from '../banner/banner.module';
+import { DescriptionsModule } from '../descriptions/descriptions.module';
 
 
 const routes: Routes = [
@@ -19,7 +18,8 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    HeaderModule,
+    BannerModule,
+    DescriptionsModule,
     HttpClientModule,
     RouterModule.forChild(routes),
     ShareModule

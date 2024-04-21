@@ -22,5 +22,28 @@
       "title": "Introducing <strong>Abstract</strong> App landing page.",
       "content": "A perfect landing page to showcase your new App."
     }
-  }
+  },
+  "descriptions": [
+    {
+      "icon": "pen",
+      "title": "Modern & Trendy Design",
+      "desc": "Dictas scaevola democritum cu his, magna abhorreant dissentias ut",
+      "button": "Learn More",
+      "link": "#"
+    },
+    {
+      "icon": "time",
+      "title": "Save your Time",
+      "desc": "oporte petrioque sit et, eum ne prima nemore perfecto. Eu cibo quidam eleifend per.",
+      "button": "Learn More",
+      "link": "#"
+    },
+    {
+      "icon": "love",
+      "title": "Made with Love",
+      "desc": "Inimicus hendrerit an duo, feugiat adipiscing everti nostrum id.",
+      "button": "Learn More",
+      "link": "#"
+    }
+  ]
 }
