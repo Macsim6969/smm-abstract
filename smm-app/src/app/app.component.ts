@@ -17,6 +17,11 @@ export class AppComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.initializeRouteEvents();
+    this.initializeRouteQueryParams();
+  }
+
+  private initializeRouteEvents() {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         const url = event.url;
@@ -25,8 +30,10 @@ export class AppComponent implements OnInit {
         }
       }
     });
-    this.route.queryParams.subscribe((params) => {
+  }
 
+  private initializeRouteQueryParams() {
+    this.route.queryParams.subscribe((params) => {
       if (params['hl']) {
         const paramsLocal: Lang = this.store._langArray.find((data) => data.hl === params['hl'])
         console.log(params)
