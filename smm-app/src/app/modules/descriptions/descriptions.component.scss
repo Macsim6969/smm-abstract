@@ -5,6 +5,10 @@
   position: relative;
   background-position: -196px -51px;
 
+  @media (max-width:768px) {
+    height: 870px;
+  }
+
   img {
     position: absolute;
     right: 0;
@@ -20,6 +24,16 @@
     flex-direction: row;
     gap: 18px;
     align-items: flex-start;
+
+    @media (max-width:1130px) {
+      width: 95%;
+    }
+
+    @media (max-width:768px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     .card {
       max-width: 360px;
@@ -83,9 +97,10 @@
         min-height: 100%;
         cursor: pointer;
 
-        mat-icon{
+        mat-icon {
           width: 20px;
         }
+
         a {
           color: #000079;
           font-size: 1.8rem;

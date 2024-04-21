@@ -7,6 +7,10 @@
   gap: 43px;
   padding-bottom: 109px;
 
+  @media (max-width: 1280px) {
+    max-width: 95%;
+  }
+
   .line {
     border: 2px solid #D8C7ED
   }
@@ -16,10 +20,24 @@
     flex-direction: row;
     gap: 207px;
 
+    @media (max-width: 1280px) {
+      gap: 80px;
+    }
+
+    @media (max-width: 920px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
     .footer_left {
       display: flex;
       flex-direction: column;
       gap: 90px;
+
+      @media (max-width: 920px) {
+        gap: 25px;
+        align-items: center;
+      }
 
       .app {
         display: flex;
@@ -48,6 +66,27 @@
       display: flex;
       flex-direction: row;
       gap: 100px;
+
+      @media (max-width: 1280px) {
+        gap: 60px;
+      }
+
+      @media (max-width: 660px) {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      @media (max-width: 460px) {
+        gap: 10px;
+        justify-content: center;
+      }
+
+      @media (max-width: 380px) {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
 
       .title {
         display: flex;
@@ -140,9 +179,10 @@
               padding: 5px 15px;
               list-style: none;
 
-              &.active{
-                background-color: rgb(206, 201, 201);                
+              &.active {
+                background-color: rgb(206, 201, 201);
               }
+
               &:hover {
                 background-color: rgb(206, 201, 201);
               }

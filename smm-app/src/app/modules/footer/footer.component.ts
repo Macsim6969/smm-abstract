@@ -49,7 +49,9 @@ export class FooterComponent implements OnInit, OnDestroy {
 
   public choiceLang(hl: string, country: string) {
     this.store._lang = hl;
-    this.router.navigate([], {queryParams: {hl: hl, country: country},queryParamsHandling: 'merge'})
+    this.router.navigate([], {queryParams: {hl: hl, country: country},queryParamsHandling: 'merge'}).then();
+    this.isDropdown = false;
+
   }
   ngOnDestroy(): void {
     this.translateSubscription.unsubscribe();

@@ -2,6 +2,10 @@
   position: relative;
   height: 1277px;
 
+  @media (max-width: 720px) {
+    height: 1390px;
+  }
+
   .modern {
     background-image: url('../../../assets/images/modern/modern_bg.png');
     height: 831px;
@@ -10,6 +14,15 @@
 
     position: relative;
 
+    @media (max-width: 920px) {
+      align-items: center;
+      height: 635px;
+    }
+
+    @media (max-width: 720px) {
+      height: 831px;
+    }
+
     .modern_container {
       padding-top: 85px;
       display: flex;
@@ -17,11 +30,36 @@
       justify-content: space-between;
       height: 780px;
 
+      @media (max-width: 920px) {
+        align-items: center;
+        height: 295px;
+      }
+
+      @media (max-width: 720px) {
+        flex-direction: column-reverse;
+        height: 500px;
+      }
+
       .modern_content {
         padding-left: 160px;
         max-width: 378px;
         display: flex;
         flex-direction: column;
+
+        @media (max-width: 1320px) {
+          padding-left: 60px;
+        }
+
+        @media (max-width: 720px) {
+          padding-left: 0;
+          max-width: 400px;
+          align-items: center;
+        }
+
+        @media (max-width: 576px) {
+          max-width: 95%;
+        }
+
 
         .title {
           padding-bottom: 32px;
@@ -29,6 +67,16 @@
           font-size: 3.6rem;
           line-height: 4.3rem;
           font-weight: 500;
+
+          @media (max-width: 720px) {
+            max-width: 100%;
+            text-align: center;
+          }
+
+          @media (max-width: 576px) {
+            font-size: 2.6rem;
+            line-height: 3.6rem;
+          }
 
         }
 
@@ -38,6 +86,15 @@
           font-size: 2rem;
           line-height: 3.2rem;
           letter-spacing: -0.02em;
+
+          @media (max-width: 720px) {
+            text-align: center;
+          }
+
+          @media (max-width: 576px) {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+          }
         }
 
         .action {
@@ -77,6 +134,19 @@
         position: absolute;
         top: 0;
         right: 0;
+
+        @media (max-width: 1320px) {
+          max-width: 500px;
+        }
+
+        @media (max-width: 920px) {
+          max-width: 390px;
+          position: relative;
+        }
+
+        @media (max-width: 576px) {
+          max-width: 95%;
+        }
       }
     }
 
@@ -95,10 +165,39 @@
     align-items: center;
     margin: 0 auto;
 
+    @media (max-width: 1320px) {
+      padding: 0 60px;
+      gap: 0;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 860px) {
+      gap: 30px;
+    }
+
+    @media (max-width: 720px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 576px) {
+      padding: 0;
+      max-width: 95%;
+    }
+
+    .save_phone {
+      @media (max-width: 720px) {
+        width: 200px;
+      }
+    }
+
     .save_content {
       max-width: 378px;
       display: flex;
       flex-direction: column;
+
+      @media (max-width: 720px) {
+        align-items: center;
+      }
 
       .title {
         max-width: 152px;
@@ -108,6 +207,15 @@
         line-height: 4.3rem;
         font-weight: 500;
 
+        @media (max-width: 720px) {
+          max-width: 100%;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 2.6rem;
+          line-height: 3.6rem;
+        }
+
       }
 
       .content {
@@ -116,6 +224,15 @@
         font-size: 2rem;
         line-height: 3.2rem;
         letter-spacing: -0.02em;
+
+        @media (max-width: 720px) {
+          text-align: center;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+        }
       }
 
       .action {

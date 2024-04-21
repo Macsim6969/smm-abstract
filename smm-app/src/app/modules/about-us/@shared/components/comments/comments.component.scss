@@ -7,6 +7,11 @@
   max-width: 445px;
   border-radius: 23px;
 
+  @media (max-width: 576px) {
+    max-width: 320px;
+    align-items: flex-start;
+  }
+
   .avatar {
     position: absolute !important;
     z-index: 88;
@@ -29,6 +34,11 @@
     position: relative;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
     ::ng-deep.mat-mdc-card-header-text {
       display: none;

@@ -4,6 +4,11 @@
   gap: 97px;
   height: 763px;
 
+  @media (max-width: 576px) {
+    height: 800px;
+    gap: 40px;
+  }
+
   .about_header {
     display: flex;
     flex-direction: row;
@@ -13,12 +18,26 @@
     margin: 0 auto;
     width: 100%;
 
+    @media (max-width: 1420px) {
+      max-width: 95%;
+      margin: 0 auto;
+    }
+    @media (max-width: 576px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+
     .header_title {
       font-size: 3.8rem;
       font-weight: 600;
       line-height: 4.4rem;
       max-width: 350px;
       color: #6A28B8;
+      @media (max-width: 576px) {
+       font-size: 2.8rem;
+       text-align: center;
+       line-height: 3.6rem  ;
+      }
     }
 
     .actions_arrow {
@@ -93,8 +112,8 @@
           box-shadow: 8px 37px 40px 0px #C3CED3;
           cursor: pointer;
 
-          @media (max-width: 340px) {
-            min-width: 304px;
+          @media (max-width: 560px) {
+            min-width: 340px;
           }
 
           ::ng-deep &.active {
