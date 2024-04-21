@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { AboutUs, AboutUsComments } from './@shared/interface/about-us.interface';
@@ -20,11 +20,13 @@ export class AboutUsComponent implements OnInit, AfterViewInit, OnDestroy {
   private aboutUsSubscription: Subscription;
   constructor(
     private translate: TranslateService,
-    private globalIcon: GlobalIconService
+    private globalIcon: GlobalIconService,
+    private elementRef: ElementRef
   ) { }
 
   ngOnInit(): void {
     this.initializeAboutUsDataFromJson();
+    this.isFirefox();
   }
   ngAfterViewInit(): void {
     this.initializeScrollStream();
@@ -70,6 +72,13 @@ export class AboutUsComponent implements OnInit, AfterViewInit, OnDestroy {
 
     this.isLeft = scrollPosition === 0;
     this.isRight = scrollPosition + containerWidth >= scrollWidth;
+  }
+
+  private isFirefox() {
+    const isFirefox = window.navigator.userAgent.toLowerCase().includes('firefox');
+    if (isFirefox) {
+      this.elementRef.nativeElement.querySelector('.about_slier .drag-scroll-content')?.classList.add('firefox')
+    }
   }
 
   ngOnDestroy(): void {

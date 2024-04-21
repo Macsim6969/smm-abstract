@@ -1,0 +1,14 @@
+.footer_bg {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+app-footer {
+  display: flex;
+  padding-top: 132px;
+  width: 100%;
+  background: linear-gradient( 244.5deg, #D2D2E1 0%, #F6F6F9 28.56%, #E9E9F1 51.08%, #F5F5F8 79.22%, #D2D2E1 100%);
+
+}
