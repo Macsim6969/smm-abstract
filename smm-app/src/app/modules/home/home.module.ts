@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShareModule } from '../../shared/share.module';
 import { BannerModule } from '../banner/banner.module';
 import { DescriptionsModule } from '../descriptions/descriptions.module';
+import { ModernModule } from '../modern/modern.module';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
     CommonModule,
     BannerModule,
     DescriptionsModule,
+    ModernModule,
     HttpClientModule,
     RouterModule.forChild(routes),
     ShareModule

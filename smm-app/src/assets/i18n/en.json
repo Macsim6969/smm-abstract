@@ -45,5 +45,17 @@
       "button": "Learn More",
       "link": "#"
     }
-  ]
+  ],
+  "modern": {
+    "title": "Modern & Trendy Design",
+    "content": "Dictas scaevola democritum cu his, magna abhorreant dissentias utDictas scaevola democritum cu his.",
+    "button": "Learn More",
+    "link": "#"
+  },
+  "save": {
+    "title": "Save your time",
+    "content": "Dictas scaevola democritum cu his, magna abhorreant dissentias utDictas scaevola democritum cu his.",
+    "button": "Download App",
+    "link": "#"
+  }
 }

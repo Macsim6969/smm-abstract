@@ -1,0 +1,160 @@
+.modern {
+  background-image: url('../../../assets/images/modern/modern_bg.png');
+  height: 831px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  .modern_container {
+    padding-top: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 780px;
+
+    .modern_content {
+      padding-left: 160px;
+      max-width: 378px;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        padding-bottom: 32px;
+        color: #3D2E87;
+        font-size: 3.6rem;
+        line-height: 4.3rem;
+        font-weight: 500;
+
+      }
+
+      .content {
+        padding-bottom: 24px;
+        color: #9B96BC;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        letter-spacing: -0.02em;
+      }
+
+      .action {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 22px;
+
+        a {
+          font-size: 1.8rem;
+          line-height: 2.6rem;
+          letter-spacing: -0.04em;
+          color: #000079;
+          font-weight: 400;
+          text-decoration: none;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+
+        ::ng-deep {
+          mat-icon {
+            width: 20px;
+
+            svg {
+              path {
+                fill: #584C95;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .modern_info {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .save_container {
+    padding: 0 142px 0 235px;
+    max-width: 1063px;
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+    align-items: center;
+    margin: 0 auto;
+
+    .save_content {
+      max-width: 378px;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        padding-bottom: 32px;
+        color: #3D2E87;
+        font-size: 3.6rem;
+        line-height: 4.3rem;
+        font-weight: 500;
+
+      }
+
+      .content {
+        padding-bottom: 24px;
+        color: #9B96BC;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        letter-spacing: -0.02em;
+      }
+
+      .action {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        background-color: #504193;
+        padding: 6px 18.5px;
+        border-radius: 24px;
+        width: max-content;
+        cursor: pointer;
+
+        &:hover{
+          background-color: #4732a5;
+        }
+
+        .download {
+
+          font-size: 1.8rem;
+          line-height: 2.4rem;
+          letter-spacing: -0.02em;
+          color: #F9F5F5;
+          font-weight: 400;
+
+          text-decoration: none;
+        }
+
+        ::ng-deep {
+          mat-icon {
+            width: 20px;
+
+            svg {
+              path {
+                fill: #F9F5F5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modern_footer {
+    background-image: url('../../../assets/images/modern/modern_footer.png');
+    height: 178px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-position-y: 43px
+  }
+}

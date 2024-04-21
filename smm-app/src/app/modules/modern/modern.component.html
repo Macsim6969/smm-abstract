@@ -1,0 +1,28 @@
+<section class="modern">
+  <div class="modern_container">
+    <div class="modern_content" *ngIf="modern
+    ">
+      <h3 class="title" [innerHTML]="modern.title"></h3>
+      <p class="content" [innerHTML]="modern.content"></p>
+      <div class="action">
+        <a [href]="modern.link" [innerHTML]="modern.button"></a>
+        <mat-icon svgIcon="arrow"></mat-icon>
+      </div>
+    </div>
+    <img class="modern_info" src="../../../assets/images/modern/modern_info.svg" alt="">
+  </div>
+  <div class="modern_footer"></div>
+
+  <div class="save_container">
+    <img class="save_phone" src="../../../assets/images/modern/save_phone.png" alt="">
+    <div class="save_content" *ngIf="modern
+    ">
+      <h3 class="title" [innerHTML]="modern.title"></h3>
+      <p class="content" [innerHTML]="modern.content"></p>
+      <div class="action">
+        <a class="download" [href]="modern.link" [innerHTML]="modern.button"></a>
+        <mat-icon svgIcon="arrow"></mat-icon>
+      </div>
+    </div>
+  </div>
+</section>
