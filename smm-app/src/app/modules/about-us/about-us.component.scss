@@ -1,0 +1,138 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 97px;
+  height: 763px;
+
+  .about_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1090px;
+    margin: 0 auto;
+    width: 100%;
+
+    .header_title {
+      font-size: 3.8rem;
+      font-weight: 600;
+      line-height: 4.4rem;
+      max-width: 350px;
+      color: #6A28B8;
+    }
+
+    .actions_arrow {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 60px;
+
+      .button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: transparent;
+
+        mat-icon {
+          width: 26px;
+        }
+      }
+
+      .left {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .about_slider {
+    height: 390px;
+    position: relative;
+    margin: 0 12px;
+    display: flex;
+    justify-content: center;
+
+    .about_block {
+      background: linear-gradient(177.05deg, #502E9C 2.3%, #802AD1 97.41%);
+      max-width: 1328px;
+      margin: 0 auto;
+      height: 278px;
+      border-radius: 17px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 0;
+    }
+
+    ::ng-deep drag-scroll {
+      position: absolute;
+      top: 100px;
+      max-width: 1412px;
+      overflow: hidden;
+      width: 100%;
+
+      .drag-scroll-content {
+        padding-top: 30px;
+        overflow-y: hidden;
+        display: flex !important;
+        max-width: 1412px;
+        width: 100% !important;
+        height: auto !important;
+        align-items: flex-start;
+        margin: 0 auto;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 160px;
+
+
+        .slide {
+          position: relative;
+          display: flex !important;
+          justify-content: flex-end;
+          min-width: 462px;
+          border-radius: 23px;
+          box-shadow: 8px 37px 40px 0px #C3CED3;
+          cursor: pointer;
+
+          @media (max-width: 340px) {
+            min-width: 304px;
+          }
+
+          ::ng-deep &.active {
+            .slide_inner {
+              padding: 60px 60px 41px 46px;
+
+              .avatar {
+                width: 81px;
+                height: 82px;
+              }
+
+              .slide_header {
+                opacity: 1;
+              }
+
+              .slide_content {
+                opacity: 1;
+
+                p {
+                  font-size: 1.8rem;
+                }
+              }
+            }
+
+          }
+        }
+
+        &::-webkit-scrollbar-track {
+          display: none;
+        }
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+    }
+
+
+  }
+}

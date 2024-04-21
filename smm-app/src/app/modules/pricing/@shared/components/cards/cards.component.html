@@ -1,0 +1,13 @@
+<mat-card class="order">
+  <mat-card-header class="header">
+    <p class="plan" [innerHTML]="card.titlePlan"></p>
+    <p class="count" [innerHTML]="card.count"></p>
+    <p class="time" [innerHTML]="card.time"></p>
+  </mat-card-header>
+  <mat-card-content class="content">
+    <p class="description" [innerHTML]="card.content"></p>
+  </mat-card-content>
+  <mat-card-actions class="actions">
+    <a mat-button href="{{card.link}}" [innerHTML]="card.btn"></a>
+  </mat-card-actions>
+</mat-card>

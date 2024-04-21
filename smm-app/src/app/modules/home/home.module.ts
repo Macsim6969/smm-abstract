@@ -7,6 +7,9 @@ import { ShareModule } from '../../shared/share.module';
 import { BannerModule } from '../banner/banner.module';
 import { DescriptionsModule } from '../descriptions/descriptions.module';
 import { ModernModule } from '../modern/modern.module';
+import { AboutUsModule } from '../about-us/about-us.module';
+import { PricingModule } from '../pricing/pricing.module';
+import { StartAppModule } from '../start-app/start-app.module';
 
 
 const routes: Routes = [
@@ -22,6 +25,9 @@ const routes: Routes = [
     BannerModule,
     DescriptionsModule,
     ModernModule,
+    AboutUsModule,
+    PricingModule,
+    StartAppModule,
     HttpClientModule,
     RouterModule.forChild(routes),
     ShareModule

@@ -1,0 +1,20 @@
+
+<mat-card class="slide_inner">
+  <img class="avatar" src="{{comment.avatar}}" alt="">
+  <mat-card-header class="slide_header">
+    <div class="slide_header_info">
+      <p class="name" [innerHTML]="comment.fullName"></p>
+      <p class="job" [innerHTML]="comment.job"></p>
+    </div>
+    <div class="stars">
+      <mat-icon svgIcon="star"></mat-icon>
+      <mat-icon svgIcon="star"></mat-icon>
+      <mat-icon svgIcon="star"></mat-icon>
+      <mat-icon svgIcon="star"></mat-icon>
+      <mat-icon svgIcon="star"></mat-icon>
+    </div>
+  </mat-card-header>
+  <mat-card-content class="slide_content">
+    <p [innerHTML]="comment.comment"></p>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,83 @@
+.slide_inner {
+  overflow: visible !important;
+  display: flex !important;
+  gap: 14px;
+  flex-direction: column;
+  padding: 50.53px 54.6px 34.81px 41.86px;
+  max-width: 445px;
+  border-radius: 23px;
+
+  .avatar {
+    position: absolute !important;
+    z-index: 88;
+    left: 46px;
+    width: 73.71px;
+    height: 69.62px;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+    top: -30px;
+    padding-bottom: 6.38px;
+  }
+
+  .slide_header {
+    width: 100%;
+    opacity: 0.5;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+
+    ::ng-deep.mat-mdc-card-header-text {
+      display: none;
+    }
+
+
+    .slide_header_info {
+      display: flex;
+      flex-direction: column;
+
+      .name {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2.8rem;
+        color: #6E1EBA;
+      }
+
+      .job {
+        color: #5E5299;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+      }
+    }
+
+    .stars {
+      display: flex;
+      gap: 8.5px;
+      flex-direction: row;
+      align-items: center;
+
+      mat-icon {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  .slide_content {
+    padding: 0;
+    opacity: 0.5;
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 3.2rem;
+      color: #7871A7;
+      white-space: normal;
+      letter-spacing: -0.956px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<section class="pricing">
+  <div class="container">
+    <div class="pricing_header">
+      <h2 class="header" [innerHTML]="pricingHeader"></h2>
+      <p class="content" [innerHTML]="pricingDescription"></p>
+    </div>
+
+    <div class="pricing_main">
+
+      <app-cards *ngFor="let card of cardsPrices" [card]="card"></app-cards>
+    </div>
+  </div>
+</section>

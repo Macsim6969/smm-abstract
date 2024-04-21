@@ -1,0 +1,21 @@
+<section class="about">
+  <div class="about_header">
+    <h2 class="header_title" [innerHTML]="title"></h2>
+    <div class="actions_arrow">
+      <button [disabled]="isLeft"
+      [style.opacity]="isLeft ? '0.5': '1'" class="button left" (click)="left()">
+        <mat-icon svgIcon="arrow"></mat-icon>
+      </button>
+      <button [disabled]="isRight"
+      [style.opacity]="isRight ? '0.5': '1'" class="button" (click)="right()">
+        <mat-icon svgIcon="arrow"></mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="about_slider">
+    <div class="about_block"></div>
+    <drag-scroll class="about_slier" #nav>
+      <app-comments (click)="choiceCard(i+1)" [ngClass]="{'active': activeCard === i+1}" drag-scroll-item class="slide" *ngFor="let comment of comments;index as i" [comment]="comment"></app-comments>
+    </drag-scroll>
+  </div>
+</section>

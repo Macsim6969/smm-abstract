@@ -57,5 +57,68 @@
     "content": "Dictas scaevola democritum cu his, magna abhorreant dissentias utDictas scaevola democritum cu his.",
     "button": "Download App",
     "link": "#"
+  },
+  "about": {
+    "titleHeader": "What 400+ reviews say about us",
+    "comments": [
+      {
+        "fullName": "Roberto Rowe",
+        "job": "Licensed Embalmer",
+        "comment": "As part of the classes I teach, I task my students with preparing a lot of presentation. To save time & reduce boredom, I occasionally have only a pick who presents the good work!",
+        "avatar": "./assets/images/about-us/roberto1.png",
+        "likeIS": 5
+      },
+      {
+        "fullName": "Roberto Rowe",
+        "job": "Licensed Embalmer",
+        "comment": "As part of the classes I teach, I task my students with preparing a lot of presentation. To save time & reduce boredom, I occasionally have only a pick who presents the good work!",
+        "avatar": "./assets/images/about-us/roberto2.png",
+        "likeIS": 5
+      },
+      {
+        "fullName": "Roberto Rowe",
+        "job": "Licensed Embalmer",
+        "comment": "As part of the classes I teach, I task my students with preparing a lot of presentation. To save time & reduce boredom, I occasionally have only a pick who presents the good work!",
+        "avatar": "./assets/images/about-us/roberto3.png",
+        "likeIS": 5
+      },
+      {
+        "fullName": "Roberto Rowe",
+        "job": "Licensed Embalmer",
+        "comment": "As part of the classes I teach, I task my students with preparing a lot of presentation. To save time & reduce boredom, I occasionally have only a pick who presents the good work!",
+        "avatar": "./assets/images/about-us/roberto2.png",
+        "likeIS": 4
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "description": "Dictas scaevola democritum cu his, magna abhorreant dissentias utDictas scaevola democritum cu his.",
+    "cardsPrice": [
+      {
+        "titlePlan": "Starter Plan",
+        "count": "Free",
+        "time": "Forever",
+        "content": "Dictas scaevola democritum cu his magna abhorreant .",
+        "btn": "Start Now",
+        "link": "#"
+      },
+      {
+        "titlePlan": "Start Now",
+        "count": "$18.00",
+        "time": "Month",
+        "content": "Dictas scaevola democritum cu his, magna abhorreant dissentias utDictas scaevola democritum cu his.",
+        "btn": "Start Now",
+        "link": "#"
+      },
+      {
+        "titlePlan": "Unlimited Plan",
+        "count": "$42.00",
+        "time": "Month",
+        "content": "Dictas scaevola democritum cu his magna abhorreant .",
+        "btn": "Start Now",
+        "link": "#"
+      }
+    ]
   }
 }

@@ -1,26 +1,26 @@
-<section class="modern">
-  <div class="modern_container">
-    <div class="modern_content" *ngIf="modern
-    ">
-      <h3 class="title" [innerHTML]="modern.title"></h3>
-      <p class="content" [innerHTML]="modern.content"></p>
-      <div class="action">
-        <a [href]="modern.link" [innerHTML]="modern.button"></a>
-        <mat-icon svgIcon="arrow"></mat-icon>
+<section class="modern_save ">
+  <div class="modern">
+    <div class="modern_container" *ngIf="modern">
+      <div class="modern_content">
+        <h3 class="title" [innerHTML]="modern.title"></h3>
+        <p class="content" [innerHTML]="modern.content"></p>
+        <div class="action">
+          <a [href]="modern.link" [innerHTML]="modern.button"></a>
+          <mat-icon svgIcon="arrow"></mat-icon>
+        </div>
       </div>
+      <img class="modern_info" src="../../../assets/images/modern/modern_info.svg" alt="{{modern.title}}">
     </div>
-    <img class="modern_info" src="../../../assets/images/modern/modern_info.svg" alt="">
+    <div class="modern_footer"></div>
   </div>
-  <div class="modern_footer"></div>
 
-  <div class="save_container">
-    <img class="save_phone" src="../../../assets/images/modern/save_phone.png" alt="">
-    <div class="save_content" *ngIf="modern
-    ">
-      <h3 class="title" [innerHTML]="modern.title"></h3>
-      <p class="content" [innerHTML]="modern.content"></p>
+  <div class="save_container" *ngIf="save">
+    <img class="save_phone" src="../../../assets/images/modern/save_phone.png" alt="{{save.title}}">
+    <div class="save_content">
+      <h3 class="title" [innerHTML]="save.title"></h3>
+      <p class="content" [innerHTML]="save.content"></p>
       <div class="action">
-        <a class="download" [href]="modern.link" [innerHTML]="modern.button"></a>
+        <a class="download" [href]="save.link" [innerHTML]="save.button"></a>
         <mat-icon svgIcon="arrow"></mat-icon>
       </div>
     </div>
