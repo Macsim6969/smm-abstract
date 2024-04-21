@@ -1,0 +1,190 @@
+{
+  "header": {
+    "headerMenu": [
+      {
+        "name": "O nas"
+      },
+      {
+        "name": "Funkcje"
+      },
+      {
+        "name": "Blog"
+      },
+      {
+        "name": "Kontakt"
+      },
+      {
+        "name": "Pobierz aplikację",
+        "alt": "download"
+      }
+    ],
+    "headerBanner": {
+      "title": "Przedstawiamy stronę docelową Abstract App.",
+      "content": "Perfekcyjna strona docelowa do prezentacji Twojej nowej aplikacji."
+    }
+  },
+  "descriptions": [
+    {
+      "icon": "pen",
+      "title": "Nowoczesny i Trendy Design",
+      "desc": "Dictas scaevola democritum cu jego, magna abhorreant dissentias ut",
+      "button": "Dowiedz się więcej",
+      "link": "#"
+    },
+    {
+      "icon": "time",
+      "title": "Oszczędź swój czas",
+      "desc": "Oporte petrioque siedzi et, eum ne prima nemore perfecto. Eu cibo quidam eleifend per.",
+      "button": "Dowiedz się więcej",
+      "link": "#"
+    },
+    {
+      "icon": "love",
+      "title": "Zrobione z miłością",
+      "desc": "Inimicus hendrerit an duo, feugiat adipiscing everti nostrum id.",
+      "button": "Dowiedz się więcej",
+      "link": "#"
+    }
+  ],
+  "modern": {
+    "title": "Nowoczesny i Trendy Design",
+    "content": "Dictas scaevola democritum cu jego, magna abhorreant dissentias ut. Dictas scaevola democritum cu jego.",
+    "button": "Dowiedz się więcej",
+    "link": "#"
+  },
+  "save": {
+    "title": "Oszczędź swój czas",
+    "content": "Dictas scaevola democritum cu jego, magna abhorreant dissentias ut. Dictas scaevola democritum cu jego.",
+    "button": "Pobierz aplikację",
+    "link": "#"
+  },
+  "about": {
+    "titleHeader": "Co mówi ponad 400 recenzji o nas",
+    "comments": [
+      {
+        "fullName": "Roberto Rowe",
+        "job": "Licencjonowany balsamista",
+        "comment": "Jako część prowadzonych przeze mnie zajęć, zlecam moim studentom przygotowanie wielu prezentacji. Aby zaoszczędzić czas i zmniejszyć nudę, czasami wybieram tylko tych, którzy prezentują dobrą pracę!",
+        "avatar": "./assets/images/about-us/roberto1.png",
+        "likeIS": 5
+      },
+      {
+        "fullName": "Roberto Rowe",
+        "job": "Licencjonowany balsamista",
+        "comment": "Jako część prowadzonych przeze mnie zajęć, zlecam moim studentom przygotowanie wielu prezentacji. Aby zaoszczędzić czas i zmniejszyć nudę, czasami wybieram tylko tych, którzy prezentują dobrą pracę!",
+        "avatar": "./assets/images/about-us/roberto2.png",
+        "likeIS": 5
+      },
+      {
+        "fullName": "Roberto Rowe",
+        "job": "Licencjonowany balsamista",
+        "comment": "Jako część prowadzonych przeze mnie zajęć, zlecam moim studentom przygotowanie wielu prezentacji. Aby zaoszczędzić czas i zmniejszyć nudę, czasami wybieram tylko tych, którzy prezentują dobrą pracę!",
+        "avatar": "./assets/images/about-us/roberto3.png",
+        "likeIS": 5
+      },
+      {
+        "fullName": "Roberto Rowe",
+        "job": "Licencjonowany balsamista",
+        "comment": "Jako część prowadzonych przeze mnie zajęć, zlecam moim studentom przygotowanie wielu prezentacji. Aby zaoszczędzić czas i zmniejszyć nudę, czasami wybieram tylko tych, którzy prezentują dobrą pracę!",
+        "avatar": "./assets/images/about-us/roberto2.png",
+        "likeIS": 4
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Cennik",
+    "description": "Dictas scaevola democritum cu jego, magna abhorreant dissentias utDictas scaevola democritum cu jego.",
+    "cardsPrice": [
+      {
+        "titlePlan": "Plan Starterowy",
+        "count": "Bezpłatny",
+        "time": "Na zawsze",
+        "content": "Dictas scaevola democritum cu jego magna abhorreant.",
+        "btn": "Rozpocznij teraz",
+        "link": "#"
+      },
+      {
+        "titlePlan": "Rozpocznij teraz",
+        "count": "$18.00",
+        "time": "Miesiąc",
+        "content": "Dictas scaevola democritum cu jego, magna abhorreant dissentias utDictas scaevola democritum cu jego.",
+        "btn": "Rozpocznij teraz",
+        "link": "#"
+      },
+      {
+        "titlePlan": "Plan Unlimited",
+        "count": "$42.00",
+        "time": "Miesiąc",
+        "content": "Dictas scaevola democritum cu jego magna abhorreant.",
+        "btn": "Rozpocznij teraz",
+        "link": "#"
+      }
+    ]
+  },
+  "startApp": {
+    "title": "Zacznij teraz korzystać z aplikacji Abstract!",
+    "description": "Dictas scaevola democritum cu jego, magna abhorreant dissentias .",
+    "link": "#",
+    "btn": "Pobierz aplikację"
+  },
+  "footer": {
+    "dataDesc": "Prawa autorskie 2018, Wszelkie prawa zastrzeżone.",
+    "aboutTitle": "O nas",
+    "about": [
+      {
+        "name": "Strona główna",
+        "link": ""
+      },
+      {
+        "name": "Funkcje",
+        "link": ""
+      },
+      {
+        "name": "Dokumentacja",
+        "link": ""
+      },
+      {
+        "name": "Cennik",
+        "link": ""
+      }
+    ],
+    "featuresTitle": "Funkcje",
+    "features": [
+      {
+        "name": "Usługi",
+        "link": ""
+      },
+      {
+        "name": "Sklep internetowy",
+        "link": ""
+      },
+      {
+        "name": "Wpływy",
+        "link": ""
+      },
+      {
+        "name": "Media",
+        "link": ""
+      },
+      {
+        "name": "Marki",
+        "link": ""
+      }
+    ],
+    "blogTitle": "Blog",
+    "blog": [
+      {
+        "name": "Warunki korzystania",
+        "link": ""
+      },
+      {
+        "name": "Wsparcie",
+        "link": ""
+      },
+      {
+        "name": "Prywatność",
+        "link": ""
+      }
+    ]
+  }
+}

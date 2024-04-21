@@ -1,0 +1,58 @@
+<section class="footer_container" *ngIf="footer">
+  <div class="line"></div>
+  <footer class="footer">
+    <div class="footer_left">
+      <mat-icon svgIcon="logo_footer"></mat-icon>
+      <div class="app">
+        <div class="link_to_app">
+          <a href="#">
+            <img src="../../../assets/images/footer/app_store.png" alt="App Store">
+          </a>
+          <a href="#">
+            <img src="../../../assets/images/footer/google_play.png" alt="Google Play">
+          </a>
+        </div>
+        <p class="dataDesc" [innerHTML]="'footer.dataDesc'| translate"></p>
+      </div>
+    </div>
+    <div class="footer_right">
+      <div class="title">
+        <p [innerHTML]="footer.aboutTitle"></p>
+        <ul>
+          <li *ngFor="let about of footer.about">
+            <a href="{{about.link}}" [innerHTML]="about.name"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="title">
+        <p [innerHTML]="footer.featuresTitle"></p>
+        <ul>
+          <li *ngFor="let features of footer.features">
+            <a href="{{features.link}}" [innerHTML]="features.name"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="title">
+        <p [innerHTML]="footer.blogTitle"></p>
+        <ul>
+          <li *ngFor="let blog of footer.blog">
+            <a href="{{blog.link}}" [innerHTML]="blog.name"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="lang">
+        <mat-icon svgIcon="lang"></mat-icon>
+        <button class="btn" mat-button (click)="openTab()">
+          <span [innerHTML]="(language$| async)"></span>
+          <mat-icon svgIcon="arrow_down"></mat-icon>
+        </button>
+        <div class="contant_lang" *ngIf="isDropdown">
+          <ul>
+            <li (click)="choiceLang(lang.hl, lang.country)" *ngFor="let lang of langArray" [innerHTML]="lang.language"
+              [ngClass]="{'active': lang.language === (language$|async)}"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>

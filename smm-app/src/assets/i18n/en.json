@@ -120,5 +120,71 @@
         "link": "#"
       }
     ]
+  },
+  "startApp": {
+    "title": "Start using Abstract app now!",
+    "description": "Dictas scaevola democritum cu his, magna abhorreant dissentias .",
+    "link": "#",
+    "btn": "Download App"
+  },
+  "footer": {
+    "dataDesc": "2018 Copyrights, All rights reserved.",
+    "aboutTitle": "About us",
+    "about": [
+      {
+        "name": "Home",
+        "link": ""
+      },
+      {
+        "name": "Features",
+        "link": ""
+      },
+      {
+        "name": "Docs",
+        "link": ""
+      },
+      {
+        "name": "Pricing",
+        "link": ""
+      }
+    ],
+    "featuresTitle": "Features",
+    "features": [
+      {
+        "name": "Services",
+        "link": ""
+      },
+      {
+        "name": "Online Shop",
+        "link": ""
+      },
+      {
+        "name": "Influences",
+        "link": ""
+      },
+      {
+        "name": "Media",
+        "link": ""
+      },
+      {
+        "name": "Brands",
+        "link": ""
+      }
+    ],
+    "blogTitle": "Blog",
+    "blog": [
+      {
+        "name": "Terms & conditions",
+        "link": ""
+      },
+      {
+        "name": "Support",
+        "link": ""
+      },
+      {
+        "name": "Privacy",
+        "link": ""
+      }
+    ]
   }
 }

@@ -1,1 +1,10 @@
-<p>start-app works!</p>
+<section class="start-app" *ngIf="startApp">
+  <div class="start-app-content">
+    <h3 class="header" [innerHTML]="startApp.title"></h3>
+    <p class="content" [innerHTML]="startApp.description"></p>
+    <a mat-button href="{{startApp.link}}">
+      <span>{{startApp.btn}}</span>
+      <mat-icon svgIcon="arrow"></mat-icon>
+    </a>
+  </div>
+</section>

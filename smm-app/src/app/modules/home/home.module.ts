@@ -10,6 +10,7 @@ import { ModernModule } from '../modern/modern.module';
 import { AboutUsModule } from '../about-us/about-us.module';
 import { PricingModule } from '../pricing/pricing.module';
 import { StartAppModule } from '../start-app/start-app.module';
+import { FooterModule } from '../footer/footer.module';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
     AboutUsModule,
     PricingModule,
     StartAppModule,
+    FooterModule,
     HttpClientModule,
     RouterModule.forChild(routes),
     ShareModule
