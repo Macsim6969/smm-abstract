@@ -20,6 +20,12 @@
     width: 95%;
   }
 
+  @media (max-width: 620px) {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0 0 0;
+  }
+
   .logo {
     width: 23px;
     height: 15px;
