@@ -247,7 +247,24 @@
         cursor: pointer;
 
         &:hover {
-          background-color: #4732a5;
+          background-color: #F9F5F5;
+          transition: all .5s ease;
+
+          .download {
+            color: #504193;
+          }
+
+          ::ng-deep {
+            mat-icon {
+              width: 20px;
+
+              svg {
+                path {
+                  fill: #504193;
+                }
+              }
+            }
+          }
         }
 
         .download {
